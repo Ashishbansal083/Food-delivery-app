@@ -1,0 +1,112 @@
+.header {
+ display: flex;
+ justify-content: space-between;
+ border: 1px solid gray;
+ align-items: center;
+ padding-right: 50px;
+}
+.logo{
+    width: 150px;    
+    
+}
+.nav-items{
+    font-size: 24px;
+}
+.nav-items>ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+.nav-items>ul>li{    
+    
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.filter{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.filter-btn{
+    padding: 10px 10px;
+    cursor: pointer;
+
+}
+.filter-btn:hover{
+    background-color: azure;
+}
+
+.rest-card{
+    width: 200px;
+    height: auto;
+    border: 1px solid lightgray;    
+    overflow: hidden;
+    max-height: 400px;
+    
+}
+.rest-card:hover{
+    box-shadow: 2px 2px ;
+    cursor: pointer;
+    border: 2px solid green;
+}
+.rest-image{
+    width: 100%;
+    height: 40%;
+    
+}
+.card-info{
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.rest-container{
+    display: flex;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    gap: 35px;
+}
+.shimmer-card-container{
+    display: flex;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    gap: 35px;
+}
+.shimmer-card{
+    width: 180px;
+    height: auto;
+    border: 1px solid lightgray;    
+    overflow: hidden;
+    height: 300px;
+    background-color: #f0f0f0;
+    padding: 10px 10px;
+}
+.shimmer-card_img{
+   
+        width: 100%;
+        height: 50%;
+        background-color: white;
+        
+
+    
+}
+.button{
+    padding: 0 30px;
+    background-color: rgba(233, 187, 62, 0.962);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.input{
+   outline: none;
+   border: 2px solid gray;
+   padding: 10px;
+   border-radius: 10px;
+   
+}
+

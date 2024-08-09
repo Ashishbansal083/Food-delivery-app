@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;AAIA","sources":["index.css"],"sourcesContent":[".header {\r\n display: flex;\r\n border: 2px solid red;\r\n}\r\n.logo-container{\r\n    width: 20px;\r\n    height: auto;\r\n    background-origin: 2px solid red;\r\n}"],"names":[],"version":3,"file":"namaste dev.9e4c6fd2.css.map","sourceRoot":"/__parcel_source_root/"}

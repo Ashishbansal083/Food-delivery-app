@@ -43,10 +43,10 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="filter" style={{ marginLeft: 20 }}>
+      <div className="filter m-4 px-4" >
         
           <input
-            className="input"
+            className="input border-2 border-black rounded-md mx-2 p-2"
             type="text"
             value={searchtext}
             onChange={(e) => {
@@ -54,8 +54,8 @@ const Body = () => {
             }}
           />
           <button
-            className="button"
-            style={{ padding: 10, marginLeft: 10 }}
+            className="button border-2 border-gray-400 rounded-md shadow-md bg-yellow-400 p-2 mx-2"
+            // style={{ padding: 10, marginLeft: 10 }}
             onClick={() => {
               const searchedrestaurant = listofRestaurants.filter((res) =>
                 res.info.name.toLowerCase().includes(searchtext.toLowerCase())
@@ -67,8 +67,8 @@ const Body = () => {
           </button>
        
         <button
-          className="button"
-          style={{ padding: 10 }}
+          className="button border-2 border-gray-400 rounded-md shadow-md bg-yellow-400 p-2 mx-2"
+          // style={{ padding: 10 }}
           onClick={() => {
             const filtedRestaurants = listofRestaurants.filter(
               (res) => res.info.avgRating > 4.1
@@ -79,7 +79,7 @@ const Body = () => {
           Tap to filter Top rated restaurants
         </button>
       </div>
-      <div className="rest-container">
+      <div className="flex flex-wrap">
         {filteredrestaurant.map((card) => (
           <Link to={'/restaurantmenu/'+ card.info.id}  key={card.info.id}>
           <Restaurantcard restdata={card} />

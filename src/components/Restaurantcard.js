@@ -11,19 +11,19 @@ const Restaurantcard = (props) => {
       costForTwo,
     } = restdata?.info;
     return (
-      <div className="rest-card">
+      <div className="m-4 p-2 w-[220px] bg-[#f0f0f0] shadow-lg rounded-md ">
         <img
-          className="rest-image"
+          className="shadow-2xl rounded-md"
           alt="food image"
           src={CDN_URL
              +
             cloudinaryImageId
           }
         ></img>
-        <div className="card-info">
-          <h4>{name}</h4>
-          <p>{cuisines.join(",")} </p>
-          <p>{costForTwo} </p>  
+        <div className="flex-col flex-wrap ">
+          <h4 className="font-bold">{name}</h4>
+          <p className="text-sm">{cuisines.join(" "+","+" ")} </p>
+          <p className="font-semibold">{costForTwo} </p>  
           <p><strong>Rating</strong>-{avgRating}</p>
           <p><strong>Delivery Time</strong>-{sla.deliveryTime} min.</p>
         </div>

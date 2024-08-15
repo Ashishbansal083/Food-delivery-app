@@ -34820,6 +34820,7 @@ const Body = ()=>{
     const [searchtext, setsearchtext] = (0, _react.useState)("");
     const [filteredrestaurant, setfilteredrestaurant] = (0, _react.useState)([]);
     const onlineStatus = (0, _useOnlineStatusJsDefault.default)();
+    const RestaurantcardPromoted = (0, _restaurantcard.withPromotedLable)((0, _restaurantcardDefault.default));
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
@@ -34835,17 +34836,17 @@ const Body = ()=>{
             children: "Looks like you are offline ,please check your internet connection"
         }, void 0, false, {
             fileName: "src/components/Body.js",
-            lineNumber: 38,
-            columnNumber: 17
+            lineNumber: 41,
+            columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 38,
-        columnNumber: 12
+        lineNumber: 40,
+        columnNumber: 7
     }, undefined);
     return listofRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 43,
+        lineNumber: 49,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -34862,8 +34863,8 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 48,
-                        columnNumber: 11
+                        lineNumber: 53,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "button border-2 border-gray-400 rounded-md shadow-md bg-yellow-400 p-2 mx-2",
@@ -34875,8 +34876,8 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 56,
-                        columnNumber: 11
+                        lineNumber: 61,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "button border-2 border-gray-400 rounded-md shadow-md bg-yellow-400 p-2 mx-2",
@@ -34888,40 +34889,46 @@ const Body = ()=>{
                         children: "Tap to filter Top rated restaurants"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 69,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 46,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex flex-wrap",
                 children: filteredrestaurant.map((card)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restaurantmenu/" + card.info.id,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantcardDefault.default), {
+                        children: card.info.promoted ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantcardPromoted, {
                             restdata: card
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 85,
-                            columnNumber: 11
+                            lineNumber: 91,
+                            columnNumber: 15
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantcardDefault.default), {
+                            restdata: card
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 93,
+                            columnNumber: 15
                         }, undefined)
                     }, card.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 84,
+                        lineNumber: 89,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 82,
+                lineNumber: 87,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 45,
+        lineNumber: 51,
         columnNumber: 5
     }, undefined);
 };
@@ -34949,6 +34956,7 @@ $parcel$ReactRefreshHelpers$af2e.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "withPromotedLable", ()=>withPromotedLable);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constantsJs = require("../utils/constants.js");
 const Restaurantcard = (props)=>{
@@ -35048,6 +35056,33 @@ const Restaurantcard = (props)=>{
     }, undefined);
 };
 _c = Restaurantcard;
+const withPromotedLable = (Restaurantcard)=>{
+    return (props)=>{
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    className: "bg-black absolute m-2 p-2 text-white rounded-lg",
+                    children: "Promoted"
+                }, void 0, false, {
+                    fileName: "src/components/Restaurantcard.js",
+                    lineNumber: 38,
+                    columnNumber: 11
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Restaurantcard, {
+                    ...props
+                }, void 0, false, {
+                    fileName: "src/components/Restaurantcard.js",
+                    lineNumber: 39,
+                    columnNumber: 11
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Restaurantcard.js",
+            lineNumber: 37,
+            columnNumber: 9
+        }, undefined);
+    };
+};
 exports.default = Restaurantcard;
 var _c;
 $RefreshReg$(_c, "Restaurantcard");

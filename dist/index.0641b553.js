@@ -34827,7 +34827,7 @@ const Body = ()=>{
     const fetchData = async ()=>{
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.4358011&lng=81.846311&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
-        console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        console.log(json.data.cards[4].card?.card?.gridElements?.infoWithStyle?.restaurants);
         setlistofRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setfilteredrestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
@@ -37270,12 +37270,19 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _itemList = require("./ItemList");
 var _itemListDefault = parcelHelpers.interopDefault(_itemList);
+var _s = $RefreshSig$();
 const RestaurantCategory = ({ data })=>{
+    _s();
+    const [showitems, setShowitems] = (0, _react.useState)(false);
+    const handleclick = ()=>{
+        setShowitems(!showitems);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "bg-gray-100 rounded-lg shadow-md",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: " my-4 p-4 justify-between flex font-bold text-lg ",
+                className: " my-4 p-4 justify-between flex font-bold text-lg cursor-pointer",
+                onClick: ()=>handleclick(),
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: [
@@ -37286,42 +37293,43 @@ const RestaurantCategory = ({ data })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantCategory.js",
-                        lineNumber: 8,
+                        lineNumber: 12,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: " \u2B07\uFE0F"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCategory.js",
-                        lineNumber: 11,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantCategory.js",
-                lineNumber: 7,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            showitems && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: data.itemCards.map((list)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemListDefault.default), {
                         data: list.card?.info
                     }, list.card?.info?.id, false, {
                         fileName: "src/components/RestaurantCategory.js",
-                        lineNumber: 15,
+                        lineNumber: 19,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/RestaurantCategory.js",
-                lineNumber: 13,
-                columnNumber: 7
+                lineNumber: 17,
+                columnNumber: 21
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantCategory.js",
-        lineNumber: 6,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
+_s(RestaurantCategory, "ODYfdsEgCB+mUX/q1OeDZM2V4Vk=");
 _c = RestaurantCategory;
 exports.default = RestaurantCategory;
 var _c;
@@ -37332,7 +37340,7 @@ $RefreshReg$(_c, "RestaurantCategory");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ItemList":"kZjho"}],"kZjho":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ItemList":"kZjho","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZjho":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1342 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37418,6 +37426,6 @@ $RefreshReg$(_c, "ItemList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequire16d9")
+},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequire16d9")
 
 //# sourceMappingURL=index.0641b553.js.map

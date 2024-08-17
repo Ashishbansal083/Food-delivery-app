@@ -27,6 +27,8 @@ const RestaurantMenu = () => {
 
   console.log(categories);
 
+  
+
   return resinfo.length === 0 ? (
     <Shimmer />
   ) : (
@@ -36,17 +38,9 @@ const RestaurantMenu = () => {
       <h3 className="font-semibold">{iteminfo?.costForTwoMessage}</h3>
       <div className="w-6/12 mx-auto">
         {categories.map((c) => (
-          <RestaurantCategory data={c.card?.card} />
+          <RestaurantCategory data={c.card?.card}  key={c.card?.card?.title}/>
         ))}
-      </div>
-
-      {/* <ul>
-        {itemcardinfo?.itemCards?.map((item) => (
-          <li key={item?.card?.info?.id}>
-            {item?.card?.info?.name} = Rs {item?.card?.info?.price / 100}
-          </li>
-        ))}
-      </ul> */}
+      </div>      
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import ItemList from "./ItemList";
 
-const RestaurantCategory = ({ data }) => {
-  const [showitems,setShowitems] = useState(false);
+const RestaurantCategory = ({ data,showitems,setShowindex }) => {
+  
   const handleclick=()=>{
-    setShowitems(!showitems);
+    setShowindex();
   }
   return (
     <div className="bg-gray-100 rounded-lg shadow-md">

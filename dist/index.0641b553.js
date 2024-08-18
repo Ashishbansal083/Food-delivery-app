@@ -37146,6 +37146,7 @@ const RestaurantMenu = ()=>{
     _s();
     const { resid } = (0, _reactRouterDom.useParams)();
     const resinfo = (0, _useRestaurantMenuDefault.default)(resid);
+    const [showindex, setShowindex] = (0, _react.useState)(2);
     const iteminfo = resinfo[2]?.card?.card?.info;
     const itemcardinfo = resinfo[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
     console.log(resinfo);
@@ -37153,7 +37154,7 @@ const RestaurantMenu = ()=>{
     console.log(categories);
     return resinfo.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/RestaurantMenu.js",
-        lineNumber: 33,
+        lineNumber: 32,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "text-center ",
@@ -37166,7 +37167,7 @@ const RestaurantMenu = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 36,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -37174,7 +37175,7 @@ const RestaurantMenu = ()=>{
                 children: iteminfo?.cuisines.join(",")
             }, void 0, false, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 37,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -37182,31 +37183,35 @@ const RestaurantMenu = ()=>{
                 children: iteminfo?.costForTwoMessage
             }, void 0, false, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 38,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "w-6/12 mx-auto",
-                children: categories.map((c)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCategoryDefault.default), {
-                        data: c.card?.card
+                children: categories.map((c, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCategoryDefault.default), {
+                        data: c.card?.card,
+                        showitems: index === showindex ? true : false,
+                        setShowindex: ()=>{
+                            setShowindex(index);
+                        }
                     }, c.card?.card?.title, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 41,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantMenu.js",
-        lineNumber: 35,
+        lineNumber: 34,
         columnNumber: 5
     }, undefined);
 };
-_s(RestaurantMenu, "Qa2UFuO8Bmyr+ZtWiHLUy5CfYWc=", false, function() {
+_s(RestaurantMenu, "7IT8hw82TKgJ6QKozfhQ96c00x4=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _useRestaurantMenuDefault.default)
@@ -37270,12 +37275,9 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _itemList = require("./ItemList");
 var _itemListDefault = parcelHelpers.interopDefault(_itemList);
-var _s = $RefreshSig$();
-const RestaurantCategory = ({ data })=>{
-    _s();
-    const [showitems, setShowitems] = (0, _react.useState)(false);
+const RestaurantCategory = ({ data, showitems, setShowindex })=>{
     const handleclick = ()=>{
-        setShowitems(!showitems);
+        setShowindex();
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "bg-gray-100 rounded-lg shadow-md",
@@ -37329,7 +37331,6 @@ const RestaurantCategory = ({ data })=>{
         columnNumber: 5
     }, undefined);
 };
-_s(RestaurantCategory, "ODYfdsEgCB+mUX/q1OeDZM2V4Vk=");
 _c = RestaurantCategory;
 exports.default = RestaurantCategory;
 var _c;

@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { LOGO_URL } from "../utils/constants.js";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus.js";
 
 const Header = () => {
+  
   const onlineStatus = useOnlineStatus();
   const [loginbutton,setloginbutton] = useState('login')
     return (
@@ -22,6 +23,7 @@ const Header = () => {
             <li className="p-2 border-b-2 border-gray-400 rounded-md shadow-md   mx-2"><Link to='/about'>About Us</Link></li>
             <li className="p-2 border-b-2 border-gray-400 rounded-md shadow-md   mx-2">Cart</li>
             <button className="p-2 border-2 border-gray-400 rounded-md shadow-md bg-yellow-400  mx-2" onClick={()=>{loginbutton==="login" ? setloginbutton("logout") : setloginbutton("login")}}>{loginbutton}</button>
+            
           </ul>
 
         </div>

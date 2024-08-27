@@ -15,9 +15,7 @@ const RestaurantMenu = () => {
   const iteminfo = resinfo[2]?.card?.card?.info;
 
   const itemcardinfo =
-    resinfo[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
-
-  console.log(resinfo);
+    resinfo[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;  
 
   const categories =
     resinfo[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
@@ -26,7 +24,6 @@ const RestaurantMenu = () => {
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
 
-  console.log(categories);
 
   return resinfo.length === 0 ? (
     <Shimmer />

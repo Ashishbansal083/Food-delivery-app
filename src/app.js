@@ -6,6 +6,7 @@ import { createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Error from "./components/Error";
+import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
@@ -37,6 +38,10 @@ const approuter = createBrowserRouter([{
     {
       path:'/contact',
       element:<ContactUs/>
+    },
+    {
+      path:'/cart',
+      element:<Cart/>
     },
     {
       path:'/restaurantmenu/:resid',

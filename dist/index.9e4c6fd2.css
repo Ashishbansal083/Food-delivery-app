@@ -272,6 +272,10 @@ img, video {
   margin: 1rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-2 {
   margin-left: .5rem;
   margin-right: .5rem;
@@ -317,6 +321,10 @@ img, video {
 
 .w-full {
   width: 100%;
+}
+
+.w-4\/6 {
+  width: 66.6667%;
 }
 
 .cursor-pointer {

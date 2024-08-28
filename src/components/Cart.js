@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import ItemList from "./ItemList";
 import { clearCart } from "../utils/cartSlice";
 import { Link } from "react-router-dom";
+import Shimmer from "./Shimmer";
 
 const Cart = () => {
   const cart = useSelector((store) => store.cart.items);

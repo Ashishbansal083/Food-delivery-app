@@ -37902,12 +37902,12 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Shimmer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "shimmer-card-container",
+        className: "flex flex-wrap ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
+                className: "m-4 p-2 w-[220px] h-[400px] bg-[#f0f0f0] shadow-lg rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
+                    className: "bg-white w-full rounded-lg h-1/2"
                 }, void 0, false, {
                     fileName: "src/components/Shimmer.js",
                     lineNumber: 7,
@@ -37919,13 +37919,13 @@ const Shimmer = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
+                className: "m-4 p-2 w-[220px] h-[400px] bg-[#f0f0f0] shadow-lg rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
+                    className: "bg-white w-full rounded-lg h-1/2"
                 }, void 0, false, {
                     fileName: "src/components/Shimmer.js",
-                    lineNumber: 9,
-                    columnNumber: 37
+                    lineNumber: 10,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Shimmer.js",
@@ -37933,41 +37933,13 @@ const Shimmer = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
+                className: "m-4 p-2 w-[220px] h-[400px] bg-[#f0f0f0] shadow-lg rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
+                    className: "bg-white w-full rounded-lg h-1/2"
                 }, void 0, false, {
                     fileName: "src/components/Shimmer.js",
-                    lineNumber: 10,
-                    columnNumber: 37
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 10,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
-                }, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 11,
-                    columnNumber: 37
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
-                }, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 12,
-                    columnNumber: 37
+                    lineNumber: 13,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Shimmer.js",
@@ -37975,41 +37947,13 @@ const Shimmer = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
+                className: "m-4 p-2 w-[220px] h-[400px] bg-[#f0f0f0] shadow-lg rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
+                    className: "bg-white w-full rounded-lg h-1/2"
                 }, void 0, false, {
                     fileName: "src/components/Shimmer.js",
-                    lineNumber: 13,
-                    columnNumber: 37
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 13,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
-                }, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 14,
-                    columnNumber: 37
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
-                }, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 15,
-                    columnNumber: 37
+                    lineNumber: 16,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Shimmer.js",
@@ -38017,41 +37961,13 @@ const Shimmer = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
+                className: "m-4 p-2 w-[220px] h-[400px] bg-[#f0f0f0] shadow-lg rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
+                    className: "bg-white w-full rounded-lg h-1/2"
                 }, void 0, false, {
                     fileName: "src/components/Shimmer.js",
-                    lineNumber: 16,
-                    columnNumber: 37
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
-                }, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 17,
-                    columnNumber: 37
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 17,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
-                }, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 18,
-                    columnNumber: 37
+                    lineNumber: 19,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Shimmer.js",
@@ -38059,17 +37975,101 @@ const Shimmer = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card",
+                className: "m-4 p-2 w-[220px] h-[400px] bg-[#f0f0f0] shadow-lg rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "shimmer-card_img"
+                    className: "bg-white w-full rounded-lg h-1/2"
                 }, void 0, false, {
                     fileName: "src/components/Shimmer.js",
-                    lineNumber: 19,
-                    columnNumber: 37
+                    lineNumber: 22,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Shimmer.js",
-                lineNumber: 19,
+                lineNumber: 21,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-4 p-2 w-[220px] h-[400px] bg-[#f0f0f0] shadow-lg rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-white w-full rounded-lg h-1/2"
+                }, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-4 p-2 w-[220px] bg-[#f0f0f0] shadow-lg rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-white w-full rounded-lg h-1/2"
+                }, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-4 p-2 w-[220px] bg-[#f0f0f0] shadow-lg rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-white w-full rounded-lg h-1/2"
+                }, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-4 p-2 w-[220px] bg-[#f0f0f0] shadow-lg rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-white w-full rounded-lg h-1/2"
+                }, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 33,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-4 p-2 w-[220px] bg-[#f0f0f0] shadow-lg rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-white w-full rounded-lg h-1/2"
+                }, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-4 p-2 w-[220px] bg-[#f0f0f0] shadow-lg rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-white w-full rounded-lg h-1/2"
+                }, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 39,
                 columnNumber: 7
             }, undefined)
         ]
@@ -38249,6 +38249,8 @@ var _itemList = require("./ItemList");
 var _itemListDefault = parcelHelpers.interopDefault(_itemList);
 var _cartSlice = require("../utils/cartSlice");
 var _reactRouterDom = require("react-router-dom");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
 const Cart = ()=>{
     _s();
@@ -38269,7 +38271,7 @@ const Cart = ()=>{
                         children: "Cart"
                     }, void 0, false, {
                         fileName: "src/components/Cart.js",
-                        lineNumber: 20,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -38278,13 +38280,13 @@ const Cart = ()=>{
                         children: "Clear Cart"
                     }, void 0, false, {
                         fileName: "src/components/Cart.js",
-                        lineNumber: 21,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Cart.js",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             cartItems.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38298,19 +38300,19 @@ const Cart = ()=>{
                             children: "Add items to cart"
                         }, void 0, false, {
                             fileName: "src/components/Cart.js",
-                            lineNumber: 33,
+                            lineNumber: 34,
                             columnNumber: 13
                         }, undefined),
                         " "
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Cart.js",
-                    lineNumber: 31,
+                    lineNumber: 32,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Cart.js",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 9
             }, undefined) : cartItems?.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "",
@@ -38318,18 +38320,18 @@ const Cart = ()=>{
                         data: item
                     }, void 0, false, {
                         fileName: "src/components/Cart.js",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Cart.js",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 11
                 }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/components/Cart.js",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 5
     }, undefined);
 };
@@ -38350,7 +38352,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","react-redux":"62sf7","./ItemList":"kZjho","../utils/cartSlice":"5RXlr","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZjho":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","react-redux":"62sf7","./ItemList":"kZjho","../utils/cartSlice":"5RXlr","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj"}],"kZjho":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1342 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
